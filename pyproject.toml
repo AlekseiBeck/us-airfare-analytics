@@ -1,0 +1,27 @@
+[project]
+name = "us-airfare-analytics"
+version = "0.1.0"
+description = "Analysis of 10+ years of U.S. DOT airfare data: when, where and on which airline flights are cheapest."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+dependencies = [
+    "dbt-duckdb",
+    "duckdb",
+    "jupyter",
+    "matplotlib",
+    "pandas",
+    "pyarrow",
+    "requests",
+    "ruff",
+    "scipy",
+    "statsmodels",
+    "tqdm",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

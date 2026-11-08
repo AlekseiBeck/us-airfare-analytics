@@ -1,0 +1,22 @@
+# Data: everything here is rebuilt by the pipeline
+/data/
+*.duckdb
+*.duckdb.wal
+
+# Secrets
+.env
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
